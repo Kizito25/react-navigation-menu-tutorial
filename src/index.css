@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    --white: #fafafa;
+    --green: rgba(1, 4, 2, 0.237);
+    --transparent: rgba(255, 255, 255, 0.014);
+    --background: var(--green);
+    --accent: var(--black);
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--accent);
+  }
+
+  * {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hero {
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 0.2px,
+        var(--white) 0.5px);
+    background-size: 20px 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    font-size: 19px;
+    line-height: 14px;
+    background-size: 15px 15px;
+    backdrop-filter: brightness(90%) blur(20px);
+    -webkit-backdrop-filter: brightness(90%) blur(20px);
+    -moz-backdrop-filter: brightness(90%) blur(20px);
+  }
+}
